@@ -1,0 +1,53 @@
+# --- Agent / local instructions (not part of the public repo) ---
+AGENTS.md
+
+# --- Secrets / environment ---
+.env
+src/.env
+*.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter / IDE ---
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# --- Office / temp locks ---
+.~lock.*
+*.tmp
+~$*
+
+# --- DATA: never commit any dataset (see AGENTS.md §3) ---
+dataset/*
+!dataset/README.md
+
+# Large raw microdata and duplicates
+PNS_2013.csv
+PNS_2013.zip
+diabeticos_polars.csv
+
+# Mis-typed duplicate of a CSV
+*.csc
+
+# --- Run artifacts / outputs ---
+output/
+output_avaliacao/
+imagem/
+imagem_v2/
+imagem_v3_critica/
+outputs/
+mlruns/
+mlflow.db
+predicoes_*.csv
+
+# --- Streamlit ---
+.streamlit/secrets.toml
